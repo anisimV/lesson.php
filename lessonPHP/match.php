@@ -16,3 +16,4 @@ $res = match (true) {
     default => 'very bad',
 };
 echo $res;
+// test
