@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Командная строка</title>
+</head>
+<body>
+    <div class="content">
+        <h2>Чтение файлов</h2>
+            <ul>
+                <li>Выведите на экран первые 5 строк файла /php/lesson/.bashrc прочитав их командой head.</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"head -n 6 /php/lesson/.bashrc"</a>
+    </div>
+
+    <div class="content">
+        <h2>Grep</h2>
+            <ul>
+                <li>Грепните файл /php/lesson/.bashrc по строчке arr.</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"grep arr /php/lesson/.bashrc"</a>
+    </div>
+
+    <div class="content">
+        <h2>Потоки</h2>
+            <ul>
+                <li>Прочитайте содержимое файла php и перенаправьте его в файл /res/result.</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"cat php > /res/result"</a>
+    </div>
+
+    <div class="content">
+        <h2>Пайплайн</h2>
+            <ul>
+                <li>Посредством конвейера отсортируйте содержимое файла php в алфавитном порядке. Выведите на экран первые строки</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"sort languages | head -3"</a>
+    </div>
+
+    <div class="content">
+        <h2>Переменные окружения</h2>
+            <ul>
+                <li>Глобально измените значение переменной на /lesson/php</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"export MAIL=/lesson/php NEW_VAR=value"</a> 
+    </div>
+
+    <div class="content">
+        <h2>Пользователи и группы</h2>
+            <ul>
+                <li>Dыведите на экран id пользователя ...</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"id -u 'имя пользователя'"</a> 
+    </div>
+    
+    <div class="content">
+        <h2>Sudo</h2>
+            <ul>
+                <li>В директории php создайте файл index с текстом I'm a student!</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"echo 'I'm a student!' | sudo tee php/index"</a> 
+    </div>
+
+    <div class="content">
+        <h2>Права доступа</h2>
+            <ul>
+                <li>Измените права доступа к файлу ИМЯ ФАЙЛА</li>
+            </ul>
+                <h4>Рещение:</h4>
+                    <a href="##" class="disabled">"chmod 511 ИМЯ ФАЙЛА"</a> 
+    </div>
+</body>
+</html>

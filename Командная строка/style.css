@@ -1,0 +1,15 @@
+.content {
+    width: auto;
+    border: 1px solid #333;
+    box-shadow: 5px 5px 3px #444;
+    padding: 8px 12px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+a.disabled {
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    color: #3013f0; /* цвет текста для нективной ссылки */
+    font-size: 20px;
+}
