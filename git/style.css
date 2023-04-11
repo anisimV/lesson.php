@@ -1,0 +1,15 @@
+.content {
+    width: 80ex;
+    border: 1px solid #333;
+    box-shadow: 5px 5px 3px #444;
+    padding: 8px 12px;
+    margin-top: 17px;
+    margin-bottom: 14px;
+    position: relative;
+    height: 380px;
+    float: left; /*Задаем обтекание*/ 
+    margin-top: 20px; 
+    width: 540px; /*Фиксируем ширину блока*/ 
+    margin-right: 80px;
+    margin-left: 41px;
+}

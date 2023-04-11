@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>git</title>
+</head>
+<body>
+    <div class="content">
+        <h2>Первые шаги с git</h2>
+            <ul>
+                <li>Добавьте в репозиторий два файларазными коммитами:</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ИМЯ ДИРЕКТОРИИ - Переходим в директорию</li>
+                            <li>echo 'I'm a student' > index.txt</li>
+                            <li>echo 'Я студент самоучка' > php.html</li>
+                            <li>git add index.txt</li>
+                            <li>git commit -m 'add index.txt'</li>
+                            <li>git add php.html</li>
+                            <li>git commit -m 'add php.html</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Работа с git (Клонирование)</h2>
+            <ul>
+                <li>Клонируем репозиторий и изменяем файлы:</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>git clone https://github.com/anisimV/lesson.php.git</li>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>echo 'I'm a student' >> php.txt</li>
+                            <li>echo 'Git - контроль версий' > git.html</li>
+                            <li>git add .</li>
+                            <li>git config --global user.email "ВВЕДИТЕ ПОЧТУ"</li>
+                            <li>git config --global user.name "ВВЕДИТЕ ИМЯ"</li>
+                            <li>git commit -m 'fix php.txt and git.html'</li>
+                            <li>git push</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Отмена изменений</h2>
+            <ul>
+                <li>Отменяем изменения двух файлов:</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git status -СМОТРИМ ИЗМЕНЕНИЯ</li>
+                            <li>git restore git.txt</li>
+                            <li>git restore php.html</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Удаление/ изменения</h2>
+            <ul>
+                <li>Удаляем и изменяем файл:</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>rm -f php.html.html</li>
+                            <li>git add php.html</li>
+                            <li>git commit -m 'remove php.html'</li>
+                            <li>mv git.txt gitTwo.txt</li>
+                            <li>git add git.txt</li>
+                            <li>git add gitTwo.txt</li>
+                            <li>git commit -m 'rename git.txt to gitTwo.txt'</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>История изменений</h2>
+            <ul>
+                <li>Посмотрите изменения и внесите обратные изменения</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git log -p</li>
+                            <li>echo 'Я студент!' > php.txt</li>
+                            <li>git add php.txt'</li>
+                            <li>git commit -m 'fix php.txt'</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Отмена изменений</h2>
+            <ul>
+                <li>Отменяем все изменения, сделанные в рабочей директории и индексе</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git status</li>
+                            <li>git restore php.txt</li>
+                            <li>git restore --staged git.md git.html</li>
+                            <li>git restore git.html</li>
+                            <li>git clean -fd</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Отмена коммитов</h2>
+            <ul>
+                <li>Удаляем два последних коммита</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git reset --hard HEAD~2</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Изменение последнего коммита</h2>
+            <ul>
+                <li>Изменяем последний коммит так, чтобы он содержал все три файла одновременно</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git add php.html</li>
+                            <li>git add git.md</li>
+                            <li>git commit --amend</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Понимаем git</h2>
+            <ul>
+                <li>Заменяем содержимое тега p на «Я учусь коммитить»</li>
+                <li>Заменяем содержимое тега span на «Я студент»</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git switch refactoring</li>
+                            <li>git reset --hard HEAD~2</li>
+                            <li>git switch working-on-html</li>
+                            <li># Редактируем и сохраняем файл</li>
+                            <li>vim php.html</li>
+                            <li>git add php.html</li>
+                            <li>git commit -m 'fix php.html'</li>
+                        </ol>
+            </ul>
+    </div>
+
+    <div class="content">
+        <h2>Stash</h2>
+            <ul>
+                <li>Создаем файл php.md с любым содержимым</li>
+                <li>Добавляем в файл hexlet.txt строку: «Я студент, учу git» и делаем коммит</li>
+                <li>Восстановливаем из Stash сохраненные ранее изменения</li>
+                <li>Делаем еще один коммит</li>
+                    <ul><h3>Решение:</h3></ul>
+                        <ol>
+                            <li>cd ПЕРЕХОДИМ В НУЖНУЮ ДИРЕКТОРИЮ</li>
+                            <li>git add .</li>
+                            <li>git stash</li>
+                            <li>echo 'Hexlet is awesome!' > php.md</li>
+                            <li>echo 'Я студент, учу git' >>git.txt</li>
+                            <li>git add git.txt</li>
+                            <li>git commit -m 'refactoring'</li>
+                            <li>git stash pop/li>
+                            <li>git add .</li>
+                            <li>git commit -m 'changes from stash'</li>
+                        </ol>
+            </ul>
+    </div>
+</body>
+</html>
